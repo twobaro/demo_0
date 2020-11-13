@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="demo_0" uuid="6648C608E1437B4AA3008CFE90637D6D" collation_locale="fr">
+	<schema name="DEFAULT_SCHEMA"/>
+	<table name="Employe" uuid="92EB14DCC4988649B17D5EEE6C255C5D" id="1">
+		<field name="UUID" uuid="DFA90D6B6614DD48933E64A6F9CEE4E1" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<field name="Nom" uuid="F86693337580F446B707F5D5FC583A82" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="Prenom" uuid="5E944E84C5B8B8459453353B6C4F8B60" type="10" limiting_length="255" never_null="true" id="3"/>
+		<primary_key field_name="UUID" field_uuid="DFA90D6B6614DD48933E64A6F9CEE4E1"/>
+		<table_extra>
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="40" top="40" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<index kind="regular" unique_keys="true" uuid="31A83C563E454F44B1AEBD5A98C25E39" type="7">
+		<field_ref uuid="DFA90D6B6614DD48933E64A6F9CEE4E1" name="UUID">
+			<table_ref uuid="92EB14DCC4988649B17D5EEE6C255C5D" name="Employe"/>
+		</field_ref>
+	</index>
+	<base_extra>
+		<journal_file journal_file_enabled="true"/>
+	</base_extra>
+</base>
